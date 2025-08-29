@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* comon mothos */
+.mobail-nevber{
+    display: none;
+}
+body{
+    width: 100%;
+}
+footer{
+    background-color: rgba(15, 14, 14, 0.726);
+}
+main{
+    background: rgba(0, 0, 0, 1);
+}
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119.41169738769531, 119.41169738769531, 119.41169738769531, 0) 100%);
+    
+}
+:root{
+    --background-color: rgba(230, 83, 60, 1);
+}
+/* comon metors and */
+
+/* header section  */
+#header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nev-bar-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+}
+.nevbar-link ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.085);
+    border-radius: 25px;
+    padding: 5px;
+}
+.nevbar-link a{
+    text-decoration: none;
+    color: white;
+}
+.nevbar-link a:hover{
+    background-color: var(--background-color);
+    padding: 5px;
+    border-radius: 25px;
+}
+.-nav-title{
+    color: rgba(230, 83, 60, 1);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+}
+.header-benner-main{
+    display: flex;justify-content: space-between;
+}
+.header-benner{
+    margin-top: 97px;
+}
+.benner-title{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 78px;
+    font-weight: 400;    
+}
+.joy{
+  font-family: 'Dancing Script', cursive;
+  color: blueviolet;
+
+}
+.benner-image{
+    margin-top: 44px;
+}
+.benar-dex{
+     color: rgba(255, 255, 255, 0.5);
+     font-family: Inter;
+     font-size: 16px;
+     font-weight: 400;   
+     margin-top: 28px;  
+}
+.batton1{
+  background-color: var(--background-color);
+  color: white;
+  border: 2px solid white;
+  width: 224px;
+  height: 54px;
+  padding: 16px 40px 16px 40px;
+  border-radius: 25px;
+  margin-top: 28px;
+}
+.batton2{
+  background-color: rgba(0, 0, 0, 0.051);
+  color: white;
+  border: 2px solid white;
+  width: 224px;
+  height: 54px;
+  padding: 16px 40px 16px 40px;
+  border-radius: 25px;
+  margin-top: 28px;
+}
+.banner-card, .banner-card2{
+    /* Group 76 */
+    width: 193px;
+    height: 98px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.102);
+    border-radius: 12px;
+    position: relative;
+    top: -450px;
+    right: -200px;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 6px 3px rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+.banner-card2{
+    position: relative;
+    top: -250px;
+    left: -120px;
+}
+.banner-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.banner-card-headink{
+    text-align: center;
+}
+.banner-card-dex{
+    text-align: center;
+}
+/* rensponciv disine  */
+@media screen and (max-width:576px) {
+    /* header section start  */
+    #header{
+        padding: 10px;
+    }
+    .nev-bar-main{
+        display: none;
+    }  
+    .mobail-nevber{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 20px;
+        align-items: center;
+    }    
+    .mobail-logo{
+        font-size: 2rem;
+        color: white;
+    }
+    /* benner section  */
+    .header-benner-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .batton1, .batton2{
+        width: 200px;
+        height: 50px;
+    }
+    .banner-card2{
+        position: relative;
+        left: 20px;
+    }
+    /* header section end  */
+}
