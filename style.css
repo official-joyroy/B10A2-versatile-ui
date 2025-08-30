@@ -254,4 +254,13 @@ header{
         left: 20px;
     }
     /* header section end  */
+    /* main section start  */
+    /* heabit section start  */
+    .habit-card-main{
+        flex-direction: column;
+    }
+    .habit-card{
+        text-align: center;
+        margin-top: 36px;
+    }
 }
