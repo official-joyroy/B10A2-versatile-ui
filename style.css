@@ -171,6 +171,54 @@ header{
 .banner-card-dex{
     text-align: center;
 }
+/* main section  */
+/* habit section  */
+#habits{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.habit-title{
+    text-align: center;
+    margin-top: -200px;
+    padding-top: 100px;
+    padding-bottom: 58px;
+}
+.habit-heder{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+}
+.habit-dex{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;    
+}
+.habit-card-main{
+    display: flex;
+    justify-content: space-between;
+}
+.habit-img{
+    border-radius: 50%;
+}
+.habit-title1{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;    
+    text-align: center;
+    padding-top: 30px;
+}
+.habit-dex1{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;    
+    text-align: center;
+    padding-top: 6px;
+}
 /* rensponciv disine  */
 @media screen and (max-width:576px) {
     /* header section start  */
