@@ -11,9 +11,6 @@
 body{
     width: 100%;
 }
-footer{
-    background-color: rgba(15, 14, 14, 0.726);
-}
 main{
     background: rgba(0, 0, 0, 1);
 }
@@ -356,6 +353,7 @@ td{
     max-width: 1440px;
     margin: 0 auto;
     color: aliceblue;
+    padding-bottom: 88px;
 }
 .time-image img{
     height: 300px;
@@ -369,6 +367,7 @@ td{
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
     padding-top: 44px;
+    
 }
 .time-heading1{
     color: rgba(255, 255, 255, 1);
@@ -403,6 +402,71 @@ td{
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;    
+}
+/* footer section  */
+.footer{
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.892);
+    
+}
+.footer-main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 0px 79px 0px;
+}
+.footer-heading1{
+    color: rgba(230, 83, 60, 1);
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 85px;
+    letter-spacing: 0%;
+    text-align: left;  
+    margin-bottom: 20px;  
+}
+.footer-dex1{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;    
+}
+.segendari-h1{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.footer-abc h4{
+    color: rgba(255, 255, 255, 0.364);
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 10px;
+}
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.copy{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 35px 0px 35px 0px;
 }
 /* rensponciv disine  */
 @media screen and (max-width:576px) {
@@ -476,5 +540,10 @@ td{
     .time-image{
         grid-template-columns: repeat(1,1fr);
         margin: 10px 20px 0px 20px;
+    }
+    /* footer section  */
+    .footer-flex{
+        flex-direction: column;
+        padding: 40px;
     }
 }
