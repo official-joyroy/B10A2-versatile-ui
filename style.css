@@ -258,6 +258,99 @@ header{
     padding-top: 14px;
 }
 /* run section and  */
+/* calcluator section  */
+.calculator-title1{
+    text-align: center;
+    margin-top: 88px;
+}
+.calculator-hading1{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;    
+}
+.calculator-dex1{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+    
+}
+.calculator-main{
+    background: rgba(34, 34, 34, 1);
+    width: 100%;
+    margin-top: 88px;
+}
+.calculator-main-flex{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.table-heading{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 52px;
+}
+table {
+  width: 100%;              /* টেবিলের চওড়া */
+  border-collapse: collapse; /* বর্ডার জোড়া লাগানো */
+  margin: 20px auto;        /* মাঝখানে আনা */
+  font-family: Arial, sans-serif;
+  margin-top: 67px;
+}
+
+th, td {
+  border: 1px solid #444;   /* বর্ডার */
+  padding: 10px;            /* ভেতরের ফাঁকা জায়গা */
+  text-align: center;       /* টেক্সট মাঝখানে */
+}
+th{
+    color: white;
+}
+td{
+    color: rgba(255, 255, 255, 0.257);
+}
+.calculator-input-main{
+    margin: 50px 189px 68px 0px;
+}
+.input-heading{
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+}
+.input-dex{
+    color: rgba(255, 255, 255, 0.337);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+    text-align: left;    
+}
+.input-section-main{
+    width: 577px;
+}
+.input1, .input-full{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 34px;
+}
+.input1 input{
+    padding: 13px 40px 13px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 100%;
+}
+.input1 input:last-child {
+  grid-column: span 2; 
+}
 /* rensponciv disine  */
 @media screen and (max-width:576px) {
     /* header section start  */
@@ -310,4 +403,20 @@ header{
         margin: 20px 20px 0px 20px;
     }
     /* run section and  */
+    /* calculator section  */
+    .calculator-main-flex{
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    .input1{
+        width: 100%;
+    }
+    .calculator-main{
+        width: 100%;
+    }
+    .calculator-input-main{
+        margin: 0 auto;
+    }
+    /* calclutar section and  */
 }
